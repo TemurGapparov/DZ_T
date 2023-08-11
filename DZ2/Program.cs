@@ -37,13 +37,28 @@
 // -3 -> нет
 // 7 -> нет
 
-Console.Write("Вветиде число: ");
-int number = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Вветиде число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
 
-
+// if (number%2==0)
+// {
+//     Console.WriteLine("Да");
+// }
+// else
+// {
+//     Console.WriteLine("Net");
+// }
 // Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
+
+Console.Write("Вветиде число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+for (int i = 2;i<=number;i+=2)
+{
+    Console.Write(i+" ");
+}
 
 // !!!!!!!!!!!!
 // Console.Write("Вветиде число: ");
