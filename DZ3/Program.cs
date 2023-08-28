@@ -41,14 +41,14 @@
 // 25, 5 -> да
 // 8,9 -> нет
 
-int a = Convert.ToInt32(Console.ReadLine());
-int b = Convert.ToInt32(Console.ReadLine());
+// int a = Convert.ToInt32(Console.ReadLine());
+// int b = Convert.ToInt32(Console.ReadLine());
 
-if (a == b * b && b == a * a)
-{
-    Console.WriteLine("Da");
-}
-else
-{
-    Console.WriteLine("Net");
-}
+// if (a == b * b && b == a * a)
+// {
+//     Console.WriteLine("Da");
+// }
+// else
+// {
+//     Console.WriteLine("Net");
+// }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gappa\\OneDrive\\Desktop\\DZ\\DZ1\\DZ1.csproj": {}
+    "c:\\Users\\gappa\\OneDrive\\Desktop\\DZ\\DZ1\\DZ1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gappa\\OneDrive\\Desktop\\DZ\\DZ1\\DZ1.csproj": {
+    "c:\\Users\\gappa\\OneDrive\\Desktop\\DZ\\DZ1\\DZ1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gappa\\OneDrive\\Desktop\\DZ\\DZ1\\DZ1.csproj",
+        "projectUniqueName": "c:\\Users\\gappa\\OneDrive\\Desktop\\DZ\\DZ1\\DZ1.csproj",
         "projectName": "DZ1",
-        "projectPath": "C:\\Users\\gappa\\OneDrive\\Desktop\\DZ\\DZ1\\DZ1.csproj",
+        "projectPath": "c:\\Users\\gappa\\OneDrive\\Desktop\\DZ\\DZ1\\DZ1.csproj",
         "packagesPath": "C:\\Users\\gappa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gappa\\OneDrive\\Desktop\\DZ\\DZ1\\obj\\",
+        "outputPath": "c:\\Users\\gappa\\OneDrive\\Desktop\\DZ\\DZ1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gappa\\AppData\\Roaming\\NuGet\\NuGet.Config",

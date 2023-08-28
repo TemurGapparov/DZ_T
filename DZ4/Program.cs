@@ -101,3 +101,13 @@
 // var str = string.Join(" ", list);
 // Console.WriteLine(str);
 // int a=Convert.ToInt32(Cpnsole.ReadLine());
+
+using System;
+
+public class MainClass
+{
+    public static void Main()
+    {
+        Console.WriteLine("Hello world!")
+    }
+}
