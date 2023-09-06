@@ -205,3 +205,189 @@
 // Random(array);
 
 // Console.WriteLine($"{x}; массив [{String.Join(", ", array)}] -> {Array(array, x)}");
+
+// Задача 35: Задайте одномерный массив из 123 случайных чисел. Найдите количество элементов массива, 
+// значения которых лежат в отрезке [10,99].
+// Пример для массива из 5, а не 123 элементов. В своём решении сделайте для 123
+// [5, 18, 123, 6, 2] -> 1
+// [1, 2, 3, 6, 2] -> 0
+// [10, 11, 12, 13, 14] -> 5
+
+// void Random(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(123);
+//     }
+// }
+
+// int Array(int[] array)
+// {
+//     int num = 0;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         if (array[i].ToString().Length == 2) num+=1;
+//     }
+//     return num;
+// }
+
+// int[] array = new int[123];
+
+// Random(array);
+
+
+// Console.WriteLine($"[{String.Join(", ", array)}] -> {Array(array)}");
+
+// Задача 37: Найдите произведение пар чисел в одномерном массиве. Парой считаем первый и последний элемент, второй 
+// и предпоследний и т.д. Результат запишите в новом массиве.
+// [1 2 3 4 5] -> 5 8 3
+// [6 7 3 6] -> 36 21
+
+// void Random(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(99);
+//     }
+// }
+
+// int[] Arrya(int[] array)
+// {
+//     if (array.Length % 2 == 0)
+//     {
+//         int[] list = new int[array.Length / 2];
+//         for (int i = 0; i < array.Length / 2; i++)
+//         {
+
+//             list[i] = array[i] + array[array.Length - i - 1];
+//         }
+//         return list;
+//     }
+//     else
+//     {
+//         int[] list = new int[array.Length / 2 + 1];
+//         for (int i = 0; i < Math.Ceiling((double) array.Length / 2); i++)
+//         {
+
+//             // Console.WriteLine(Math.Floor((decimal) array.Length / 2));
+//             if (i == (array.Length / 2))
+//             {
+//                 list[i] = array[i];
+//             }
+//             else
+//             {
+//                 list[i] = array[i] + array[array.Length - i - 1];
+//             }
+//         }
+//         return list;
+//     }
+// }
+
+// int[] array = new int[Convert.ToInt32(Console.ReadLine())];
+// Random(array);
+
+// int[] q   = new int[(int) Math.Ceiling((decimal) array.Length / 2)];
+// Console.WriteLine($"{String.Join(" ", q)}");
+
+
+// Console.WriteLine($"[{String.Join(" ", array)}] -> {String.Join(" ", Arrya(array))}");
+
+// Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. 
+// Напишите программу, которая покажет количество чётных чисел в массиве.
+// [345, 897, 568, 234] -> 2
+
+// void Random(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(100, 1000);
+//     }
+// }
+
+// int Count(int[] array)
+// {
+//     int count = 0;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         if(array[i] % 2 == 0)
+//         {
+//             count += 1;
+//         }
+//     }
+//     return count;
+// }
+
+// int[] array = new int[Convert.ToInt32(Console.ReadLine())];
+// Random(array);
+
+// Console.WriteLine($"[{String.Join(", ", array)}] -> {Count(array)}");
+
+// Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+// [3, 7, 23, 12] -> 19
+// [-4, -6, 89, 6] -> 0
+
+// void Random(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = new Random().Next(-10, 10);
+//     }
+// }
+
+// int Sum(int[] array)
+// {
+//     int count = 0;
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         if (i % 2 != 0)
+//         {
+//             count += array[i];
+//         }
+//     }
+//     return count;
+// }
+
+// int[] array = new int[Convert.ToInt32(Console.ReadLine())];
+// Random(array);
+
+// Console.WriteLine($"[{String.Join(", ", array)}] -> {Sum(array)}");
+
+// Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+// [3.22, 4.2, 1.15, 77.15, 65.2] => 77.15 - 1.15 = 76
+
+// void Random(double[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = Math.Round(new Random().NextDouble() * 20, 2);
+//     }
+// }
+
+// double[] Count(double[] array)
+// {
+//     double[] arr = new double[2];
+//     double min = array[0];
+//     double max = array[0];
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         if (array[i] < min)
+//         {
+//             min = array[i];
+//         }
+//         if (array[i] > max)
+//         {
+//             max = array[i];
+//         }
+//     }
+//     arr[0] = max;
+//     arr[1] = min;
+//     return arr;
+// }
+
+// double[] array = new double[Convert.ToInt32(Console.ReadLine())];
+// Random(array);
+// double[] arrq = Count(array);
+
+
+// Console.WriteLine($"[{String.Join(", ", array)}] -> {arrq[0]} - {arrq[1]} = {Math.Round(arrq[0] - arrq[1], 2)}");
+
