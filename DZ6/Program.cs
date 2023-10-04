@@ -355,39 +355,39 @@
 // Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 // [3.22, 4.2, 1.15, 77.15, 65.2] => 77.15 - 1.15 = 76
 
-// void Random(double[] array)
-// {
-//     for (int i = 0; i < array.Length; i++)
-//     {
-//         array[i] = Math.Round(new Random().NextDouble() * 20, 2);
-//     }
-// }
+void Random(double[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = Math.Round(new Random().NextDouble() * 20, 2);
+    }
+}
 
-// double[] Count(double[] array)
-// {
-//     double[] arr = new double[2];
-//     double min = array[0];
-//     double max = array[0];
-//     for (int i = 0; i < array.Length; i++)
-//     {
-//         if (array[i] < min)
-//         {
-//             min = array[i];
-//         }
-//         if (array[i] > max)
-//         {
-//             max = array[i];
-//         }
-//     }
-//     arr[0] = max;
-//     arr[1] = min;
-//     return arr;
-// }
+double[] Count(double[] array)
+{
+    double[] arr = new double[2];
+    double min = array[0];
+    double max = array[0];
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] < min)
+        {
+            min = array[i];
+        }
+        if (array[i] > max)
+        {
+            max = array[i];
+        }
+    }
+    arr[0] = max;
+    arr[1] = min;
+    return arr;
+}
 
-// double[] array = new double[Convert.ToInt32(Console.ReadLine())];
-// Random(array);
-// double[] arrq = Count(array);
+double[] array = new double[Convert.ToInt32(Console.ReadLine())];
+Random(array);
+double[] arrq = Count(array);
 
 
-// Console.WriteLine($"[{String.Join(", ", array)}] -> {arrq[0]} - {arrq[1]} = {Math.Round(arrq[0] - arrq[1], 2)}");
+Console.WriteLine($"[{String.Join(", ", array)}] -> {arrq[0]} - {arrq[1]} = {Math.Round(arrq[0] - arrq[1], 2)}");
 
